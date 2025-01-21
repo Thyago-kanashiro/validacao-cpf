@@ -27,4 +27,5 @@ jobs:
 
       - name: Run tests
         run: |
+          export PYTHONPATH=$PYTHONPATH:$GITHUB_WORKSPACE
           python -m unittest tests/test_validacao_cpf.py

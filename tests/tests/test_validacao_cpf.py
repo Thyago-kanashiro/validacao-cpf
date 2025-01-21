@@ -1,4 +1,11 @@
 import unittest
+import sys
+import os
+
+# Adiciona o diretório raiz ao PYTHONPATH
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+# Agora podemos importar a função de validação de CPF
 from function.__init__ import validar_cpf
 
 class TestValidacaoCPF(unittest.TestCase):
